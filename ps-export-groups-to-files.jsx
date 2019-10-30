@@ -8,7 +8,7 @@ activeDocument.activeLayer = activeDocument.layers.getByName(doc.layerSets[a].na
 dupLayers();
 activeDocument.mergeVisibleLayers();
 activeDocument.trim(TrimType.TRANSPARENT,true,true,true,true);
-var saveFile= File(oldPath +"/"+doc.layerSets[a].name +".png");
+var saveFile= File(oldPath +"/"+doc.layerSets[a].name +".tif");
 SaveTiff(saveFile);
 app.activeDocument.close(SaveOptions.DONOTSAVECHANGES);
     }
